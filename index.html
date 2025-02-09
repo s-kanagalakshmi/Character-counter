@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Counter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: rgb(253, 189, 106);
+        }
+        textarea {
+            width: 70%;
+            height: 100px;
+            font-size: 16px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .counter {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+        .warning {
+            color: red;
+            font-weight: bold;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Real-Time Character Counter</h2>
+    <p>Max Characters: 200</p>
+    
+    <textarea id="message" placeholder="Type characters"></textarea>
+    
+    <div class="counter">
+        <span id="charCount">0</span>/200 characters remaining: <span id="charRemaining">200</span>
+        <p id="warningMessage" class="warning">Character limit reached!</p>
+    </div>
+
+   <script src="./counter.js"></script>
+
+</body>
+</html>
